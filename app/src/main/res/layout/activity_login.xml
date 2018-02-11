@@ -26,6 +26,7 @@
         android:layout_gravity="center"
         android:paddingTop="@android:dimen/notification_large_icon_height">
 
+
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
@@ -45,6 +46,7 @@
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:singleLine="true" />
+
 
             </android.support.design.widget.TextInputLayout>
 
