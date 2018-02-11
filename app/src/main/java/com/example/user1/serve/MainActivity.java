@@ -187,6 +187,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
             mAuthTask.execute((Void) null);
         }
     }
+
+    private void register() {
+
+    }
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
         return email.contains("@");

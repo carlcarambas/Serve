@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,12 +20,19 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone"/>
 
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/logo_black"
+        tools:layout_width="@android:dimen/thumbnail_width" />
+
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="439dp"
         android:layout_gravity="center"
-        android:paddingTop="@android:dimen/notification_large_icon_height">
+        android:paddingTop="@dimen/activity_vertical_margin">
 
 
         <LinearLayout
@@ -42,6 +50,7 @@
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fadingEdge="horizontal"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
@@ -58,6 +67,7 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fadingEdge="horizontal"
                     android:hint="@string/prompt_password"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
@@ -88,7 +98,7 @@
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/email_sign_in_button2"
+                android:id="@+id/navto_register_button"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
